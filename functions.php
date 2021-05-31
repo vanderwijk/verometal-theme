@@ -71,7 +71,9 @@ function create_coating_cpt() {
 		'show_in_rest' => true,
 		'publicly_queryable' => true,
 		'capability_type' => 'post',
-		'rewrite' => array('slug' => _x('coating', 'Custom post type slug', 'verometal') ),
+		//'rewrite' => array('slug' => _x('coating', 'Custom post type slug', 'verometal') )
+		//'rewrite' => true
+		'rewrite' => array('slug' => 'coating')
 	);
 	register_post_type( 'portfolio_page', $args );
 
