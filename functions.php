@@ -13,6 +13,78 @@ function verometal_child_theme_locale() {
 }
 add_action( 'after_setup_theme', 'verometal_child_theme_locale' );
 
+// Country versions of Google Analytics script
+function verometal_analytics() {
+	if ( ICL_LANGUAGE_CODE == 'en' ) { ?>
+
+<!-- Global site tag (gtag.js) - Google Analytics - en -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126743564-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-126743564-1');
+</script>
+
+	<?php } else if ( ICL_LANGUAGE_CODE == 'bg' ) { ?>
+
+<!-- Global site tag (gtag.js) - Google Analytics - bg -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KFB1HG0185"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-KFB1HG0185');
+</script>
+
+	<?php } else if ( ICL_LANGUAGE_CODE == 'nl' ) { ?>
+
+<!-- Global site tag (gtag.js) - Google Analytics nl -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q4FK431BHC"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-Q4FK431BHC');
+</script>
+
+	<?php } else if ( ICL_LANGUAGE_CODE == 'fr' ) { ?>
+
+<!-- Global site tag (gtag.js) - Google Analytics - fr -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DVGYDS2M91"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-DVGYDS2M91');
+</script>
+
+	<?php } else if ( ICL_LANGUAGE_CODE == 'de' ) { ?>
+
+<!-- Global site tag (gtag.js) - Google Analytics - de -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-THW806HS7T"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-THW806HS7T');
+</script>
+
+	<?php } else if ( ICL_LANGUAGE_CODE == 'es' ) { ?>
+
+<!-- Global site tag (gtag.js) - Google Analytics - es -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-49WJJEJQ4C"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-49WJJEJQ4C');
+</script>
+
+	<?php };
+}
+add_action( 'wp_head', 'verometal_analytics' );
+
 // unregister portfolio_page custom post type to modify it
 function verometal_unregister_post_type(){
 	unregister_post_type( 'portfolio_page' );
