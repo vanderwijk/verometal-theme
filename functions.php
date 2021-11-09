@@ -17,13 +17,13 @@ add_action( 'after_setup_theme', 'verometal_child_theme_locale' );
 function verometal_analytics() {
 	if ( ICL_LANGUAGE_CODE == 'en' ) { ?>
 
-<!-- Global site tag (gtag.js) - Google Analytics - en -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126743564-1"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MV1B2QKSSH"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'UA-126743564-1');
+gtag('config', 'G-MV1B2QKSSH');
 </script>
 
 	<?php } else if ( ICL_LANGUAGE_CODE == 'bg' ) { ?>
