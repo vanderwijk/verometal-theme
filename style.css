@@ -9,3 +9,28 @@ Template: bridge
 */
 
 @import url("../bridge/style.css");
+
+.gform_wrapper {
+	margin-bottom: 50px;
+}
+
+.gform_footer .gform_button.button {
+	font-size: 16px!important;
+	color: #112337!important;
+}
+
+@media only screen and (max-width: 600px) {
+	.gform_footer {
+		justify-content: space-around;
+	}
+}
+
+.page-id-46504 nav.main_menu,
+.page-id-46504 .header_inner_right,
+.page-id-46504 .header_top {
+	display: none!important;
+}
+
+.page-id-46504 .mobile_menu_button {
+	visibility: hidden!important;
+}
